@@ -1,0 +1,86 @@
+/* styles.css */
+/*
+ Name: [Neha Gaddala]
+  Email: [Neha_Gaddala@student.uml.edu]
+  Description: CSS for styling the full Scrabble board game interface, including tile rack, bonus squares, and drag/drop visuals.
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+}
+
+#score {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 2px;
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
+
+.board-square {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.double-letter {
+  background-color: lightblue;
+}
+
+.triple-letter {
+  background-color: darkblue;
+  color: white;
+}
+
+.double-word {
+  background-color: pink;
+}
+
+.triple-word {
+  background-color: red;
+  color: white;
+}
+
+.center {
+  background-color: gold;
+}
+
+#tile-rack {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  height: 70px;
+  position: relative;
+}
+
+.tile {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  background-color: burlywood;
+  border: 1px solid #555;
+  cursor: move;
+  position: relative;
+}

@@ -1,0 +1,33 @@
+<!-- index.html -->
+<!--
+  Name: [Your Name Here]
+  Email: [Your Email Here]
+  Description: HTML structure for Scrabble Full Board UI, with jQuery UI integration.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scrabble Full Board</title>
+  <!-- Link to external styles and jQuery UI dependencies -->
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+  <script src="Scrabble_Pieces_AssociativeArray_Jesse.js"></script>
+</head>
+<body>
+  <h1>Scrabble - Full Board</h1>
+  <div id="score">Score: 0</div>
+  <div id="board"></div> <!-- Scrabble board grid will be rendered here -->
+  <div id="tile-rack"></div> <!-- Container for draggable letter tiles -->
+
+  <!-- Control buttons -->
+  <button id="submit-word">Submit Word</button>
+  <button id="new-tiles">New Tiles</button>
+  <button id="restart">Restart</button>
+
+  <!-- Main script for game logic -->
+  <script src="game.js"></script>
+</body>
+</html>
